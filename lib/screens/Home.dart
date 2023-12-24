@@ -1,3 +1,4 @@
+import 'package:arrose_ta_plante/builder/CardBuilder.dart';
 import 'package:arrose_ta_plante/screens/SearchFlowers.dart';
 import 'package:flutter/material.dart';
 
@@ -66,35 +67,4 @@ class _FlowersGridListState extends State<FlowersGridList> {
   }
 }
 
-Widget BuildImageCard(BuildContext context, int index, String imageName) => Card(
-  margin: EdgeInsets.all(4),
-  shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8),
-    ),
-  child: Column(
-    crossAxisAlignment: CrossAxisAlignment.stretch,
-    children: <Widget>[
-      Expanded(
-        child: Container(
-          margin : EdgeInsets.all(8),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: new AssetImage(imageName),
-                  fit: BoxFit.cover
-                )
-              ),
-            )
-          )
-        ),
-      ),
-      Container(
-        padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
-        alignment: Alignment.center,
-        child: Text("Nom de la plante"),
-      )
-    ]
-  )
-);
+
