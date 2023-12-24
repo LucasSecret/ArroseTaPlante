@@ -1,5 +1,5 @@
 import 'package:arrose_ta_plante/builder/CardBuilder.dart';
-import 'package:arrose_ta_plante/screens/SearchFlowers.dart';
+import 'package:arrose_ta_plante/screens/SearchPlant.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
           onPressed: (){
             Navigator.push(
               context, 
-              MaterialPageRoute(builder: (context) => const SearchFlowerScreen())
+              MaterialPageRoute(builder: (context) => const SearchPlantScreen())
             );
           },
           child: Icon(Icons.add, color: Colors.white,),

@@ -4,14 +4,14 @@ import 'package:arrose_ta_plante/utility/ApiProvider.dart';
 import 'package:arrose_ta_plante/utility/Debouncer.dart';
 import 'package:flutter/material.dart';
 
-class SearchFlowerScreen extends StatefulWidget {
-  const SearchFlowerScreen({super.key});
+class SearchPlantScreen extends StatefulWidget {
+  const SearchPlantScreen({super.key});
 
   @override
-  State<SearchFlowerScreen> createState() => _SearchFlowerScreenState();
+  State<SearchPlantScreen> createState() => _SearchPlantScreenState();
 }
 
-class _SearchFlowerScreenState extends State<SearchFlowerScreen> {
+class _SearchPlantScreenState extends State<SearchPlantScreen> {
   List allPlants = [];
   List queryPlants = [];
   var plantsToDisplay = [];
